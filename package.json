@@ -1,6 +1,6 @@
 {
-  "name": "jspdf",
-  "version": "1.5.3",
+  "name": "@visualbi/jspdf",
+  "version": "1.5.3-rc3",
   "homepage": "https://github.com/mrrio/jspdf",
   "description": "PDF Document creation from JavaScript",
   "main": "dist/jspdf.node.min.js",
@@ -105,6 +105,7 @@
     "test-typings": "tsc -p types/tsconfig.json && tsc -p types/tsconfig-node.json",
     "prettier": "prettier --write \"*.{js,ts,md,css,json}\" \"{spec,examples,src,types}/**/*.{js,ts,md,css,json}\"",
     "delete-docs": "node deletedocs.js",
-    "generate-docs": "./node_modules/.bin/jsdoc -c jsdoc.json --readme README.md"
+    "generate-docs": "./node_modules/.bin/jsdoc -c jsdoc.json --readme README.md",
+    "publishPackage": "npm publish --tag ibcs"
   }
 }
